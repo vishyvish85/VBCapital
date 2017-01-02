@@ -1,0 +1,262 @@
+/***************************
+GENERAL
+***************************/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*selects the div that we created in index.html and named it wrapper. */
+
+#wrapper {
+    max-width: 940px;
+    /*we want the width to be no larger than 940pixels wide.*/
+    margin: 0 auto;
+    /*sets the margin on all four sides. First value (0) is for top and bottom. Second value (auto) is for left and right.*/
+    padding: 0 5%;
+    /*first value is for top and bottom. second value is for left and right.*/
+}
+
+a {
+    text-decoration: none;
+    /* removes the underlines from all the hyperlinks. */
+}
+
+img {
+    max-width: 100%;
+}
+
+h3 {
+    margin: 0 0 1em 0;
+}
+
+
+/***************************
+HEADING
+***************************/
+
+header {
+    float: left;
+    margin: 0 0 30px 0;
+    /* top, right, bottom, left. Start from the top and go clockwise. */
+    padding: 5px 0 0 0;
+    width: 100%;
+    /* stretches the elements arcoss the entire page. */
+}
+
+#logo {
+    text-align: center;
+    /*aligns the txt to center. 'center' = keywords*/
+    margin: 0;
+    /*color: #ffffff;         /* color of the logo texts. "Vishal Patel" & "Portfolio Manager" */
+}
+
+h1 {
+    font-family: 'Changa One', sans-serif;
+    margin: 15px 0;
+    /* 15 pixels for top and bottom. 0 pixels for left and right. */
+    font-size: 1.75em;
+    /* 1em = 16 pixels */
+    font-weight: normal;
+    /*unbolds the header font */
+    line-height: 0.8em;
+}
+
+h2 {
+    font-size: 0.75em;
+    margin: -5px 0 0;
+    /*-5 pixels = top margin. 0(second value) left and right. 0(third value) bottom. The negative value will pull the value closer to the other elements. */
+    font-weight: normal;
+}
+
+
+/***************************
+NAVIGATION
+***************************/
+
+nav {
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    /* changes the 'Portfolio','About','Contact' from a list layout to an inline layout and gives them a block style. */
+}
+
+nav a {
+    font-weight: 800;
+    padding: 15px 10px;
+}
+
+
+/***************************
+FOOTER
+***************************/
+
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    clear: both;
+    /* clears the footer of all the floating properties. */
+    padding-top: 50px;
+    color: #ccc;
+    /* #ccc = light grey color */
+}
+
+
+/* resizes the social media icons */
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+
+/***************************
+PAGE: PORTFOLIO
+***************************/
+
+#gallery {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* style for all elements inside the list item */
+
+#gallery li {
+    float: left;
+    /* float allows use to position of the elements. */
+    width: 45%;
+    /* each image will only take up 45% of the total width of the parent element. */
+    margin: 2.5%;
+    /* each image has a margin of 2.5% on each side, totaling to 5%. 45%+45%+(2.5% * 4) = 100% width of the parent element. */
+    background-color: #f5f5f5;
+    color: #bdc3c7;
+}
+
+
+/* style for all elements inside the paragraph item */
+
+#gallery li a p {
+    margin: 0;
+    padding: 5%;
+    font-size: 0.75em;
+    color: #bdc3c7;
+}
+
+
+/***************************
+PAGE:ABOUT
+***************************/
+
+.profile-photo {
+    display: block;
+    /* Images are displayed inline by default. block will allow us to use auto margin to center the profile picture */
+    max-width: 150px;
+    margin: 0 auto 30px;
+    border-radius: 20px;
+    /* allows you to add rounded corners to an element. */
+}
+
+
+/***************************
+PAGE: CONTACT
+***************************/
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.contact-info a {
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 0 0 0 30px;
+}
+
+.contact-info li.instagram a {
+    background-image: url('../img/instagram_color.png');
+    /* .. allow us to jump one directory upwards */
+}
+
+.contact-info li.mail a {
+    background-image: url('../img/gmail_color.png');
+    /* .. allow us to jump one directory upwards */
+}
+
+.contact-info li.twitter a {
+    background-image: url('../img/twitter_color.png');
+    /* .. allow us to jump one directory upwards */
+}
+
+
+/***************************
+COLORS
+***************************/
+
+
+/* site body */
+
+body {
+    background-color: #fff;
+    color: #999;
+}
+
+
+/*styles for the header */
+
+header {
+    background: #999696;
+    border-color: #599a68;
+}
+
+
+/* nav background on mobile devices. changes the background of all the elements inside the nav selector. */
+
+nav {
+    background: #599a68;
+}
+
+
+/* links */
+
+a {
+    color: #6ab47b;
+}
+
+
+/* color of the logo texts. "Vishal Patel" & "Portfolio Manager" */
+
+h1, h2 {
+    color: #fff;
+}
+
+
+/* nav link. selects the anchors within the nav selector. */
+
+nav a, nav a:visited {
+    color: #ffffff;
+}
+
+
+/* selected nav link. any anchor element inside the nav selector and also inside selected class will get the styles inside this. */
+
+nav a.selected, nav a:hover {
+    color: #32673f;
+}

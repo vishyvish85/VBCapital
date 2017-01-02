@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--Tells the browser this is an html document. The DOCTYPE should always be the first thing on the page and it should always be at the top.-->
+<html>
+
+<head>
+    <!--Contains the meta data of the website. CSS content. -->
+    <meta charset="utf-8">
+    <!--Telling the browser how the website is formatted and what type of characters to use. charset is an attribute (character set should be Universal Transformation format 8bit. -->
+    <title>Vishal Patel | Portfolio Manager</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!--Links normalize.css to this html file -->
+    <link href="https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400i,700,700i,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <!--Links main.css to this html file -->
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="logo">
+            <!-- Anchor elements that create hyperlinks-->
+            <h1>Vishal Patel</h1>
+            <h2>Portfolio Manager</h2>
+        </a>
+        <nav>
+            <!-- navigation function -->
+            <ul>
+                <!--unordered list -->
+                <li><a href="index.html">Portolio</a></li>
+                <!--List items. Adding a class instead of id gives greater flexibility.-->
+                <li><a href="about.html" class="selected">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="wrapper">
+        <!--Divides different sections of the page. 'id=' uniquely identifies the elements.-->
+        <section>
+            <!--Breaks up the wesbite into different sections. -->
+            <img src="img/vishal.jpg" alt="Photograph of Vishal Patel" class="profile-photo">
+            <h3>About</h3>
+            <p> Hi, I'm Vishal! This is my trading portfolio where I share all of my positions and thoughts behind entering them. When I'm not trading, I enjoy coding, playing video games, drinking good coffee, and more.</p>
+            <p>If you'd like to follow me on Twitter, my username is <a href="https://twitter.com/VBCapital">@VBCapital</a>.</p>
+        </section>
+        <footer>
+            <a href="https://twitter.com/VBCapital"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+            <img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon">
+            <p>&copy; 2016 Vishal Patel.</p>
+            <!-- &copy; is the copyright symbol -->
+        </footer>
+    </div>
+</body>
+
+</html>

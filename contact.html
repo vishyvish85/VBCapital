@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--Tells the browser this is an html document. The DOCTYPE should always be the first thing on the page and it should always be at the top.-->
+<html>
+
+<head>
+    <!--Contains the meta data of the website. CSS content. -->
+    <meta charset="utf-8">
+    <!--Telling the browser how the website is formatted and what type of characters to use. charset is an attribute (character set should be Universal Transformation format 8bit. -->
+    <title>Vishal Patel | Portfolio Manager</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!--Links normalize.css to this html file -->
+    <link href="https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400i,700,700i,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <!--Links main.css to this html file -->
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="logo">
+            <!-- Anchor elements that create hyperlinks-->
+            <h1>Vishal Patel</h1>
+            <h2>Portfolio Manager</h2>
+        </a>
+        <nav>
+            <!-- navigation function -->
+            <ul>
+                <!--unordered list -->
+                <li><a href="index.html">Portolio</a></li>
+                <!--List items. Adding a class instead of id gives greater flexibility.-->
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="selected">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="wrapper">
+        <!--Divides different sections of the page. 'id=' uniquely identifies the elements.-->
+        <section id="primary">
+            <!--Breaks up the wesbite into different sections. -->
+            <h3>General information</h3>
+            <p>I am not currently looking for new design work but I am available for speaking gigs and similar engagements. If you have any questions, please don't hesitate to contact me!</p>
+        </section>
+        <section id="secondary">
+            <!--Breaks up the wesbite into different sections. -->
+            <h3>Contact Details</h3>
+            <ul class="contact-info">
+                <li class="instagram"><a href="http://instagram.com/_u/vbcapitalgroup/">@vbcapitalgroup</a></li>
+                <li class="twitter"><a href="https://twitter.com/intent/tweet?screen_name=VBCapital">@VBCapital</a></li>
+                <li class="mail"><a href="mailto:vbcapitalgroup@gmail.com">vbcapitalgroup@gmail.com</a></li>
+            </ul>
+        </section>
+        <footer>
+            <a href="https://twitter.com/VBCapital"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+            <img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon">
+            <p>&copy; 2016 Vishal Patel.</p>
+            <!-- &copy; is the copyright symbol -->
+        </footer>
+    </div>
+</body>
+
+</html>
